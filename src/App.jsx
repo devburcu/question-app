@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import StartScreen from './Components/Startscreen';
+import StartScreen from './Components/StartScreen';
 import QuestionCard from './Components/QuestionCard';
 import ProgressBar from './Components/ProgressBar';
 import ResultScreen from './Components/ResultScreen';
