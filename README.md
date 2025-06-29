@@ -87,3 +87,9 @@ npm run dev
 - Kullanıcı cevap vermezse süre sonunda otomatik olarak "boş cevap" sayılır ve sonraki soruya geçilir.
 
 - Review mode, kullanıcı testi tamamlandıktan sonra cevaplarını gözden geçirmesine olanak sağlar.
+
+---
+
+## 🌐 Live Demo
+
+- 🔗 [Projeyi canlı olarak görmek için tıklayın](https://gilded-truffle-693bab.netlify.app/)
