@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .info-text {
+        width: 90%;
+    }
+
+    .question-image {
+        width: 95%;
+    }
+
+    .options {
+        /* şıklar alt alta gelsin */
+        grid-template-columns: 1fr;
+    }
+
+    .result-card {
+        width: 250px;
+    }
+}

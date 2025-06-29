@@ -1,0 +1,25 @@
+:root {
+  --green-color: #39FF14;
+  --dark-color: #121212;
+  --red-color: #ff4d4d;
+  --grey-color: #6c757d;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  height: 100%;
+  margin: 0;
+  background:
+    linear-gradient(135deg, #1a1a1a 0%, #101820 50%, #0d1b0d 100%);
+  /* Arka plan olarak çapraz bir renk geçişli (gradient) tasarım kullanır. */
+  background-repeat: no-repeat;
+  /* Arka plan resmi veya gradyan tekrar etmez, bir kez çizilir. */
+  color: var(--green-color);
+  -webkit-font-smoothing: antialiased; 
+  /* WebKit tabanlı tarayıcılarda daha yumuşak kenarlı yazı gösterimi */
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox ve macOS için de benzer şekilde düzleştirme sağlar */
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}

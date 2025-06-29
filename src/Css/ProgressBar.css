@@ -1,0 +1,16 @@
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: var(--dark-color);
+  margin: 0;
+  overflow: hidden;
+  /* boyutunu aşan içeriği gizle */
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--green-color);
+  width: 0%;
+  transition: width 0.3s ease;
+  /* Genişlik değişimleri 0.3 saniyelik yumuşak bir animasyonla gerçekleşir. */
+}

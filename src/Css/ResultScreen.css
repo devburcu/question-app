@@ -1,0 +1,54 @@
+.result-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.result-card {
+  text-align: center;
+  background-color: var(--dark-color);
+  box-shadow: 0 0 20px var(--green-color);
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+
+.result-screen h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.8rem;
+}
+
+.result-screen p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.restart-btn,
+.show-answer-btn {
+  font-family: 'Rajdhani', sans-serif;
+  width: 250px;
+  margin: 0 auto;
+  color: var(--green-color);
+  background-color: var(--dark-color);
+  border: 2px solid var(--green-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.show-answer-btn:hover {
+  color: var(--dark-color);
+  background-color: var(--green-color);
+  border: 2px solid var(--dark-color);
+}

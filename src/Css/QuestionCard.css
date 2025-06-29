@@ -1,0 +1,103 @@
+.question-card {
+    text-align: center;
+}
+
+.question-card h3 {
+    font-size: 1.5rem;
+    color: var(--green-color);
+    margin: 20px 0;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 sütun */
+    grid-template-rows: auto auto;
+    /* 2 satır */
+    gap: 20px;
+    max-width: 650px;
+    margin: 30px auto;
+    justify-items: center;
+
+}
+
+.options button {
+    width: 300px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid var(--green-color);
+    background-color: var(--dark-color);
+    color: var(--green-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.options button:hover,
+.restart-btn:hover {
+    background-color: var(--green-color);
+    color: var(--dark-color);
+}
+
+.question-image {
+    padding: 5px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    max-height: 380px;
+    border-radius: 12px;
+    object-fit: cover;
+    /* Görseli orantılı biçimde doldurur */
+    border: 2px solid var(--green-color);
+    background-color: var(--dark-color);
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.question-image.visible {
+    opacity: 1;
+    /* Görünür yap */
+}
+
+.options.show {
+    animation: fadeIn 3s ease forwards;
+    pointer-events: auto;
+}
+
+/* Bu animasyon, bir öğeyi şeffaf halden tam görünür hale getirir. */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-question {
+    width: 620px;
+    border: 2px solid var(--green-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--green-color);
+    background-color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInQuestion 1.5s ease-out forwards;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* Bu animasyon, bir öğeyi yukarıdan aşağıya kayarak ve görünerek giriş yaptırmak için tanımlandı */
+@keyframes fadeInQuestion {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
