@@ -60,12 +60,12 @@ Bu proje, kullanıcıların çoktan seçmeli soruları cevapladığı, zaman sı
 1. Projeyi indirin veya klonlayın:
 
 ```
-git clone 
+git clone https://github.com/devburcu/question-app.git
 ```
 
 2. Proje klasörüne girin:
 ```
-cd 
+cd question-app
 ```
 
 3. Gerekli paketleri yükleyin:
